@@ -1,0 +1,52 @@
+# macOS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Python cache / local env
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+
+# Raw dataset CSV files are too large for GitHub.
+archive-2/*.csv
+!archive-2/data_summary.csv
+!archive-2/device_info.csv
+!archive-2/features.csv
+
+# Generated data artifacts.
+data/labeled_devices/
+data/lodo_top20/
+data/splits/
+data/**/*.csv
+data/**/*.xlsx
+
+# Keep lightweight experiment reports trackable.
+!outputs/
+!outputs/reports/
+!outputs/reports/**/*.md
+!outputs/reports/**/*.txt
+!outputs/reports/**/*.csv
+
+# Model / notebook artifacts.
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+*.sav
+.ipynb_checkpoints/

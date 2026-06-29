@@ -1,0 +1,140 @@
+Device 1 Train -> Device 2 Full Test
+====================================
+
+Goal
+----
+Train on device 1 ordered split train set, then test on all labeled device 2 rows without splitting device 2.
+
+Device 1 train rows: 814635
+Device 2 test rows: 835876
+
+Device 1 train distribution:
+binary_target
+0     39638
+1    774997
+
+Device 2 test distribution:
+binary_target
+0     13113
+1    822763
+
+Timing
+------
+RF 115 train seconds: 29.31
+RF 115 predict seconds: 0.70
+
+RF top20 train seconds: 13.77
+RF top20 predict seconds: 0.25
+
+RF top20 + SMOTE seconds: 1.44
+RF top20 + SMOTE train seconds: 43.57
+RF top20 + SMOTE predict seconds: 0.30
+
+Top20 Features
+--------------
+HH_jit_L0.01_mean
+HpHp_L0.1_weight
+H_L0.01_weight
+HH_L0.01_radius
+HH_jit_L3_mean
+HpHp_L0.01_weight
+MI_dir_L0.1_weight
+MI_dir_L0.1_mean
+HH_L0.01_pcc
+HH_L0.01_covariance
+MI_dir_L1_weight
+HH_L0.01_magnitude
+HH_jit_L5_mean
+HH_jit_L1_mean
+MI_dir_L3_weight
+H_L0.1_weight
+HH_L0.01_weight
+MI_dir_L0.01_variance
+HH_L0.01_std
+MI_dir_L1_mean
+
+Results
+-------
+Model: device1_to_device2_rf_115
+--------------------------------
+Accuracy: 0.999946
+Attack precision: 0.999945
+Attack recall: 1.000000
+Attack F1: 0.999973
+Benign precision: 1.000000
+Benign recall: 0.996568
+Benign F1: 0.998281
+
+Confusion Matrix:
+               predicted_benign  predicted_attack
+actual_benign             13068                45
+actual_attack                 0            822763
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      benign       1.00      1.00      1.00     13113
+      attack       1.00      1.00      1.00    822763
+
+    accuracy                           1.00    835876
+   macro avg       1.00      1.00      1.00    835876
+weighted avg       1.00      1.00      1.00    835876
+
+Confusion matrix CSV: outputs/reports/device1_to_device2_rf_115_confusion_matrix.csv
+
+
+Model: device1_to_device2_rf_top20
+----------------------------------
+Accuracy: 0.999970
+Attack precision: 0.999970
+Attack recall: 1.000000
+Attack F1: 0.999985
+Benign precision: 1.000000
+Benign recall: 0.998093
+Benign F1: 0.999046
+
+Confusion Matrix:
+               predicted_benign  predicted_attack
+actual_benign             13088                25
+actual_attack                 0            822763
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      benign       1.00      1.00      1.00     13113
+      attack       1.00      1.00      1.00    822763
+
+    accuracy                           1.00    835876
+   macro avg       1.00      1.00      1.00    835876
+weighted avg       1.00      1.00      1.00    835876
+
+Confusion matrix CSV: outputs/reports/device1_to_device2_rf_top20_confusion_matrix.csv
+
+
+Model: device1_to_device2_rf_top20_smote
+----------------------------------------
+Accuracy: 0.999614
+Attack precision: 0.999608
+Attack recall: 1.000000
+Attack F1: 0.999804
+Benign precision: 1.000000
+Benign recall: 0.975368
+Benign F1: 0.987530
+
+Confusion Matrix:
+               predicted_benign  predicted_attack
+actual_benign             12790               323
+actual_attack                 0            822763
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      benign       1.00      0.98      0.99     13113
+      attack       1.00      1.00      1.00    822763
+
+    accuracy                           1.00    835876
+   macro avg       1.00      0.99      0.99    835876
+weighted avg       1.00      1.00      1.00    835876
+
+Confusion matrix CSV: outputs/reports/device1_to_device2_rf_top20_smote_confusion_matrix.csv
+
