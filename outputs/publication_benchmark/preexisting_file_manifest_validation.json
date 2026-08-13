@@ -1,0 +1,6 @@
+{
+  "snapshot_scope": "All pre-existing workspace files except .git and the new output root",
+  "preexisting_file_count": 246,
+  "postexisting_file_count": 246,
+  "unchanged": true
+}

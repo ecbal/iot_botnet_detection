@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "comparison_basis": "single_measured_run_per_model",
+  "top20_vs_baseline": {
+    "feature_count": {
+      "reference_value": 115.0,
+      "comparison_value": 20.0,
+      "absolute_change": -95.0,
+      "signed_percent_change": -82.6086956521739,
+      "direction": "reduction",
+      "reduction_percent": 82.6086956521739,
+      "increase_percent": null
+    },
+    "training_time": {
+      "reference_value": 256.46149799996056,
+      "comparison_value": 104.74109458294697,
+      "absolute_change": -151.72040341701359,
+      "signed_percent_change": -59.15913484098768,
+      "direction": "reduction",
+      "reduction_percent": 59.15913484098768,
+      "increase_percent": null
+    },
+    "prediction_time": {
+      "reference_value": 0.6833915000315756,
+      "comparison_value": 0.4045880000339821,
+      "absolute_change": -0.27880349999759346,
+      "signed_percent_change": -40.79703946928102,
+      "direction": "reduction",
+      "reduction_percent": 40.79703946928102,
+      "increase_percent": null
+    },
+    "training_dataset_memory": {
+      "reference_value": 2484.025429725647,
+      "comparison_value": 436.4558687210083,
+      "absolute_change": -2047.5695610046387,
+      "signed_percent_change": -82.42949272990279,
+      "direction": "reduction",
+      "reduction_percent": 82.42949272990279,
+      "increase_percent": null
+    },
+    "test_dataset_memory": {
+      "reference_value": 621.0064363479614,
+      "comparison_value": 109.11413669586182,
+      "absolute_change": -511.8922996520996,
+      "signed_percent_change": -82.4294676658193,
+      "direction": "reduction",
+      "reduction_percent": 82.4294676658193,
+      "increase_percent": null
+    },
+    "peak_training_rss": {
+      "reference_value": 4542.5,
+      "comparison_value": 4424.5,
+      "absolute_change": -118.0,
+      "signed_percent_change": -2.5976884975233903,
+      "direction": "reduction",
+      "reduction_percent": 2.5976884975233903,
+      "increase_percent": null
+    },
+    "incremental_training_rss": {
+      "reference_value": 3007.890625,
+      "comparison_value": 3930.25,
+      "absolute_change": 922.359375,
+      "signed_percent_change": 30.66465806082959,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 30.66465806082959
+    },
+    "total_pipeline_excluding_io": {
+      "reference_value": 257.14488949999213,
+      "comparison_value": 105.55214595794678,
+      "absolute_change": -151.59274354204535,
+      "signed_percent_change": -58.95226766388838,
+      "direction": "reduction",
+      "reduction_percent": 58.95226766388838,
+      "increase_percent": null
+    },
+    "total_pipeline_including_io": {
+      "reference_value": 288.47359545796644,
+      "comparison_value": 137.10845904191956,
+      "absolute_change": -151.36513641604688,
+      "signed_percent_change": -52.47105412741401,
+      "direction": "reduction",
+      "reduction_percent": 52.47105412741401,
+      "increase_percent": null
+    },
+    "uncompressed_model_size": {
+      "reference_value": 2.0347986221313477,
+      "comparison_value": 2.462151527404785,
+      "absolute_change": 0.4273529052734375,
+      "signed_percent_change": 21.002221085927765,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 21.002221085927765
+    },
+    "compressed_model_size": {
+      "reference_value": 0.6057491302490234,
+      "comparison_value": 0.7059535980224609,
+      "absolute_change": 0.1002044677734375,
+      "signed_percent_change": 16.54223881959904,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 16.54223881959904
+    },
+    "training_speed": {
+      "baseline_divided_by_top20": 2.448527953819144,
+      "direction": "speedup",
+      "speedup_factor": 2.448527953819144,
+      "slowdown_factor": null
+    },
+    "preprocessing_time_difference_seconds": 0.4064633749658242,
+    "accuracy": {
+      "reference_value": 0.9999992920459235,
+      "comparison_value": 0.9999978761377707,
+      "absolute_metric_difference": -1.4159081528353212e-06,
+      "percentage_point_difference": -0.00014159081528353212,
+      "direction": "decrease"
+    },
+    "precision": {
+      "reference_value": 0.9999992315589518,
+      "comparison_value": 0.9999984631179034,
+      "absolute_metric_difference": -7.684410483488335e-07,
+      "percentage_point_difference": -7.684410483488335e-05,
+      "direction": "decrease"
+    },
+    "recall": {
+      "reference_value": 1.0,
+      "comparison_value": 0.9999992315583612,
+      "absolute_metric_difference": -7.68441638765438e-07,
+      "percentage_point_difference": -7.68441638765438e-05,
+      "direction": "decrease"
+    },
+    "f1_score": {
+      "reference_value": 0.9999996157793283,
+      "comparison_value": 0.9999988473379847,
+      "absolute_metric_difference": -7.684413435571358e-07,
+      "percentage_point_difference": -7.684413435571358e-05,
+      "direction": "decrease"
+    }
+  },
+  "top20_smote_vs_top20": {
+    "training_rows": {
+      "reference_value": 5650085.0,
+      "comparison_value": 10410678.0,
+      "absolute_change": 4760593.0,
+      "signed_percent_change": 84.25701560242014,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 84.25701560242014
+    },
+    "training_dataset_memory": {
+      "reference_value": 436.4558687210083,
+      "comparison_value": 804.2002201080322,
+      "absolute_change": 367.7443513870239,
+      "signed_percent_change": 84.25693815612175,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 84.25693815612175
+    },
+    "training_time": {
+      "reference_value": 104.74109458294697,
+      "comparison_value": 246.31882124999538,
+      "absolute_change": 141.5777266670484,
+      "signed_percent_change": 135.16922582370918,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 135.16922582370918
+    },
+    "total_pipeline_excluding_io": {
+      "reference_value": 105.55214595794678,
+      "comparison_value": 351.104202290182,
+      "absolute_change": 245.55205633223522,
+      "signed_percent_change": 232.6357783668994,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 232.6357783668994
+    },
+    "total_pipeline_including_io": {
+      "reference_value": 137.10845904191956,
+      "comparison_value": 382.39453479030635,
+      "absolute_change": 245.2860757483868,
+      "signed_percent_change": 178.89930166408843,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 178.89930166408843
+    },
+    "peak_training_rss": {
+      "reference_value": 4424.5,
+      "comparison_value": 5710.90625,
+      "absolute_change": 1286.40625,
+      "signed_percent_change": 29.07461295061589,
+      "direction": "increase",
+      "reduction_percent": null,
+      "increase_percent": 29.07461295061589
+    },
+    "additional_preprocessing_time_seconds": 104.10188945720438,
+    "smote_time_seconds": 103.66240908310283,
+    "accuracy": {
+      "reference_value": 0.9999978761377707,
+      "comparison_value": 0.9999985840918472,
+      "absolute_metric_difference": 7.079540764731718e-07,
+      "percentage_point_difference": 7.079540764731718e-05,
+      "direction": "increase"
+    },
+    "precision": {
+      "reference_value": 0.9999984631179034,
+      "comparison_value": 0.9999992315583612,
+      "absolute_metric_difference": 7.684404578212067e-07,
+      "percentage_point_difference": 7.684404578212067e-05,
+      "direction": "increase"
+    },
+    "recall": {
+      "reference_value": 0.9999992315583612,
+      "comparison_value": 0.9999992315583612,
+      "absolute_metric_difference": 0.0,
+      "percentage_point_difference": 0.0,
+      "direction": "no_change"
+    },
+    "f1_score": {
+      "reference_value": 0.9999988473379847,
+      "comparison_value": 0.9999992315583612,
+      "absolute_metric_difference": 3.842203765147545e-07,
+      "percentage_point_difference": 3.842203765147545e-05,
+      "direction": "increase"
+    }
+  }
+}
